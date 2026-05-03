@@ -1,0 +1,14 @@
+# SW-KG Dependencies
+
+# Core dependencies
+anthropic>=0.18.0         # Anthropic API for LLM calls
+networkx>=3.0             # Graph operations and centrality metrics
+numpy>=1.24.0             # Numerical operations
+pandas>=2.0.0             # Data analysis and CSV handling
+
+# Plotting and analysis
+matplotlib>=3.7.0         # Visualization
+scipy>=1.10.0             # Curve fitting for complexity validation
+
+# Optional: for faster graph operations
+# python-igraph>=0.10.0   # Alternative graph library (faster for large graphs)
