@@ -43,8 +43,8 @@ kg.write(response, node_type="insight", agent_id=agent_id)
 ### Installation
 
 ```bash
-git clone https://github.com/hmalviya1/swkg-prototype.git
-cd swkg-prototype
+git clone https://github.com/hmalviya1/swkg.git
+cd swkg
 pip install -r requirements.txt
 ```
 
@@ -79,7 +79,7 @@ relevant = kg.read(query_type="insight", limit=3)
 export ANTHROPIC_API_KEY="your-key-here"
 
 # Run validation (10 agents, 100 turns)
-python swkg_prototype.py
+python swkg.py
 
 # Run ablation studies
 python ablation_no_hubs.py
@@ -192,8 +192,8 @@ SW-KG is the first to use small-world graph topology as the **primary** coordina
 ## Repository Structure
 
 ```
-swkg-prototype/
-├── swkg_prototype.py          # Main implementation (baseline + SW-KG)
+swkg/
+├── swkg.py          # Main implementation (baseline + SW-KG)
 ├── swkg.py                    # Standalone KnowledgeGraph class
 ├── ablation_no_hubs.py        # Ablation: hub threshold = 999
 ├── ablation_no_economy.py     # Ablation: random retrieval
@@ -211,7 +211,7 @@ swkg-prototype/
 
 ## Configuration
 
-Key parameters (in `swkg_prototype.py`):
+Key parameters (in `swkg.py`):
 
 ```python
 MODEL = "claude-haiku-4-5-20251001"  # LLM model
