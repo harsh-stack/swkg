@@ -43,7 +43,7 @@ kg.write(response, node_type="insight", agent_id=agent_id)
 ### Installation
 
 ```bash
-git clone https://github.com/hmalviya1/swkg.git
+git clone https://github.com/harsh-stack/swkg.git
 cd swkg
 pip install -r requirements.txt
 ```
